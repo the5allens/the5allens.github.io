@@ -18,10 +18,12 @@ html, body, .sonar-wrapper {
 .sonar-emitter {
   position: relative;
   margin: 0 auto;
-  width: 275px;
-  height: 275px;
+  width: 20rem;
+  height: 20rem;
   border-radius: 9999px;
-  background-color: #ccffff;
+  background-color: rgb(86,172,152);
+  background:url(img/house.png);
+  background-size:cover;
 }
 
 /* the 'wave', same shape and size as its parent */
@@ -32,7 +34,7 @@ html, body, .sonar-wrapper {
   width: 100%;
   height: 100%;
   border-radius: 9999px;
-  background-color: #ccffff;
+  background-color: rgb(86,172,152);
   opacity: 0;
   z-index: -1;
   pointer-events: none;

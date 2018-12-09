@@ -2,6 +2,12 @@
 	color: #000;
 }
 
-.main-bg {
+.bg-1 {
 	background-color: #ccffff; /*snow blue*/
+}
+
+
+.container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
 }
