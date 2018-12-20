@@ -3,11 +3,6 @@
 	color: #000;
 }
 
-/*.container-fluid, .container {
-    padding-top: 70px;
-    padding-bottom: 70px;
-}*/
-
 .blur-me {
 	filter:blur(3px);
 	transition: .3s ease-in-out;
@@ -49,16 +44,29 @@
 
 .gift {
 	padding: 10px;
+	transition: transform 3s, filter 3s, opacity 3s;
+	transform: scale(2);
+	filter: blur(4px);
+	opacity: 0;
+}
+
+.gift.appear {
+  transform: scale(1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  filter: blur(0);
+  opacity: 1;
 }
 
 .closed-present:hover {
 	cursor: pointer;
 }
 
+.locked-present:hover {
+	cursor: not-allowed;
+}
+
 .footer {
 	padding: 10px;
 }
-
 
 .fade-in {
     -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */

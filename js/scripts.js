@@ -6,8 +6,30 @@ $(document).ready(() => {
     		openPresent()
     	}});
 
+    $('.locked-present').on('click', () => {
+    	$('.locked-present').effect('shake', {times:2}, 500);
+    });
+
     showPresent();
 });
+
+function checkDate() {
+	var d = new Date();
+	console.log(d);
+    if (d.getFullYear() > 2018) {
+    	return true;
+    }
+    if (d.getFullYear() < 2018) {
+    	return false;
+    }
+    if (d.getMonth() < 11) {
+    	return false;
+    }
+    if (d.getDate() < 25) {
+    	return false;
+    }
+    return true;
+}
 
 function closeOverlay() {
 	$('.overlay').hide();
@@ -17,10 +39,13 @@ function closeOverlay() {
 }
 
 function showPresent() {
-	console.log('showing present');
-	$('.overlay').show();
 	$('.present').show();
-	$('.closed-present').fadeIn('slow')
+	if (! checkDate()) {
+		console.log('locked present')
+		$('.locked-present').fadeIn('slow');
+	} else {
+		$('.closed-present').fadeIn('slow');
+	}
 }
 
 function openPresent() {
@@ -30,7 +55,7 @@ function openPresent() {
 	}
 	$('.closed-present').effect('shake', {times:8}, 1000, () => {
 		$('.opened-present').show().delay(250).fadeOut('slow', () => {
-			$('.gift').fadeIn('slow');
+			$('.gift').show().addClass('appear',100);
 		});
 		launchConfetti();
 		$('.closed-present').hide();
@@ -43,6 +68,7 @@ function launchConfetti() {
   var multiplier = .125;
   var numConfetti = Math.floor(multiplier * $(document).width() + 10);
   var iterations = 0;
+  var maxIter = 7;
   var count = 0;
 
   for (var i = 0; i < numConfetti; i++) {
@@ -77,7 +103,7 @@ function launchConfetti() {
   }
 
   function drop(x) {
-    if (iterations < 5){
+    if (iterations < maxIter){
       $('.confetti-'+x).animate({
         top: "100%",
         left: "+="+Math.random()*15+"%"
