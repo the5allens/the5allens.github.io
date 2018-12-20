@@ -5,12 +5,49 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Harrison</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/css/confetti.css">
+	<link rel="stylesheet" href="/css/style.css">
 </head>
-<body>
-	<div>
-		<a href='/main_page.html'>yeet</a>
-	</div>
+<body class="wrapper">
+	<!--Navbar-->
+	<nav class="navbar navbar-expand-sm bg-1 navbar-light sticky-top">
+		<a class="navbar-brand" href="/index.html">
+			<img src="/img/banner.png" alt="family banner" height="30">
+		</a>
+
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="collapsibleNavbar">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" href="/main_page.html">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="/phil/">Phil</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="/jan/">Jan</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="/brandon/">Brandon</a>
+				</li>
+				<li class="nav-item active">
+					<a class="nav-link" href="/harrison/">Harrison</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="/colton/">Colton</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
 	<div class="container">
+		<button type="button" class="btn bg-1 btn-lg floating-element" onclick="launchConfetti()">Open up!</button>
+	</div>
+	<a href='/main_page.html'>yeet</a>
+	<!-- <div class="container">
 		<div class="row">
 			<div class="col-3"></div>
 			<div class="col-6">
@@ -25,11 +62,12 @@
 			</div>
 			<div class="col-3"></div>
 		</div>
-	</div>
+	</div> -->
     
 
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<script src="/js/confetti.js"></script>
 </html>

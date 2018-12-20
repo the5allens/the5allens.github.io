@@ -22,7 +22,7 @@ html, body, .sonar-wrapper {
   height: 20rem;
   border-radius: 9999px;
   background-color: rgb(86,172,152);
-  background:url(img/house.png);
+  background:url(/img/house.png);
   background-size:cover;
 }
 

@@ -3,11 +3,10 @@
 	color: #000;
 }
 
-
-.container-fluid, .container {
+/*.container-fluid, .container {
     padding-top: 70px;
     padding-bottom: 70px;
-}
+}*/
 
 .blur-me {
 	filter:blur(3px);
