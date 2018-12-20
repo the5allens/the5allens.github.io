@@ -1,5 +1,7 @@
 function launchConfetti() {
-  var numConfetti = 250;
+  var multiplier = .125
+  var numConfetti = Math.floor(multiplier * $(document).width() + 10)
+  console.log(numConfetti)
   var iterations = 0;
   var count = 0;
 
