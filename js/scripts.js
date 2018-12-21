@@ -1,5 +1,23 @@
+var decoy = true;
+var fam = true;
+
 $(document).ready(() => {
     $('.close-overlay').on('click', () => {closeOverlay()});
+
+    $('.footer').on('click', () => {
+      if (decoy) {
+        decoy = false;
+        fam = true;
+        $('.footer > h2').text('Merry Christmas 🎁')
+      } else if (!decoy && fam) {
+        fam = false;
+        $('.footer > h2').text('Merry Christmas 🎅')
+      } else {
+        decoy = true;
+        fam = true;
+        $('.footer > h2').text('Merry Christmas 🎄')
+      }
+    });
 
     $('.closed-present').on('click', () => {
     	if (! $('#present-box').hasClass('opened')){
@@ -55,6 +73,15 @@ function openPresent() {
 	}
 	$('.closed-present').effect('shake', {times:8}, 1000, () => {
 		$('.opened-present').show().delay(250).fadeOut('slow', () => {
+      if ($('.ohyoon').length > 0){
+        if (decoy){
+          $('#decoy').show();
+        } else if (fam){
+          $('#fam').show();
+        } else {
+          $('#real').show();
+        }
+      }
 			$('.gift').show().addClass('appear',100);
 		});
 		launchConfetti();
