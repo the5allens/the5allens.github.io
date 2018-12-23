@@ -3,9 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Jan</title>
+	<title>404 Error - Page Not Found</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-	<link rel="stylesheet" href="/css/confetti.css">
 	<link rel="stylesheet" href="/css/style.css">
 </head>
 <body class="wrapper">
@@ -24,11 +23,24 @@
 				<li class="nav-item">
 					<a class="nav-link" href="/main_page.html">Home</a>
 				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+						Gifts
+					</a>
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="/gifts/">All Gifts</a>
+					<a class="dropdown-item" href="/gifts/phil.html">Phil</a>
+					<a class="dropdown-item" href="/gifts/jan.html">Jan</a>
+					<a class="dropdown-item" href="/gifts/b-and-k.html">Brandon & Kelly</a>
+					<a class="dropdown-item" href="/gifts/brandon.html">Brandon</a>
+					<a class="dropdown-item" href="/gifts/colton.html">Colton</a>
+					<a class="dropdown-item" href="/gifts/ohyoon.html">Ohyoon</a>
+				</div>
 				<li class="nav-item">
 					<a class="nav-link" href="/phil/">Phil</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link active" href="/jan/">Jan</a>
+					<a class="nav-link" href="/jan/">Jan</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="/brandon/">Brandon</a>
@@ -43,24 +55,17 @@
 		</div>
 	</nav>
 
-    <!--Present-->
-    <div class="present hide-on-start container-fluid text-center" id="present-box">
-    	<img src="/img/gifts/present_locked.png" alt="locked present" class="locked-present hide-on-start img-fluid">
-    	<img src="/img/gifts/present_closed.png" alt="closed present" class="closed-present hide-on-start img-fluid">
-    	<img src="/img/gifts/present_opened.png" alt="opened present" class="opened-present hide-on-start img-fluid">
-    </div>
-
-    <!--Gift-->
-    <div class="gift hide-on-start container-fluid text-center">
-    	<img src="/img/gifts/jan_gift.png" alt="Jan's gift" class="img-fluid">
-    </div>
+	<div class="jumbotron text-center bg-1">
+		<h1>Sorry, it looks like you had the wrong address. 404 is definitely not the right house number. Please try a different location, and maybe we'll be home there!</h1>
+		<h2><a href="/main_page.html">This is a good place to start</a></h2>
+	</div>
 
     <!--Footer-->
     <div class="footer sticky-bottom bg-1 navbar-light text-center">
     	<h2>Merry Christmas! 🎄</h2>
     </div>
-	
 </body>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
