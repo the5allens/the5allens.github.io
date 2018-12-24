@@ -1,0 +1,1 @@
+document.write('<!--Footer--><div class="footer sticky-bottom bg-1 navbar-light text-center"><h2>Merry Christmas! 🎄</h2></div>');

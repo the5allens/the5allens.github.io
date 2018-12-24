@@ -2,33 +2,48 @@ var decoy = true;
 var fam = true;
 
 $(document).ready(() => {
-    $('.close-overlay').on('click', () => {closeOverlay()});
+  $(".nav-item a").each(function() {
+    //console.log($(this).attr('href'));
+    if ((window.location.pathname.indexOf($(this).attr('href'))) > -1) {
+        $(this).parent().addClass('active');
+    }
+  });
 
-    $('.footer').on('click', () => {
-      if (decoy) {
-        decoy = false;
-        fam = true;
-        $('.footer > h2').text('Merry Christmas 🎁')
-      } else if (!decoy && fam) {
-        fam = false;
-        $('.footer > h2').text('Merry Christmas 🎅')
-      } else {
-        decoy = true;
-        fam = true;
-        $('.footer > h2').text('Merry Christmas 🎄')
-      }
-    });
+  $(".dropdown-menu a").each(function() {
+    //console.log($(this).attr('href'));
+    if ((window.location.pathname.indexOf($(this).attr('href'))) > -1) {
+        $(this).addClass('active');
+        $(".dropdown").addClass('active');
+    }
+  });
 
-    $('.closed-present').on('click', () => {
-    	if (! $('#present-box').hasClass('opened')){
-    		openPresent()
-    	}});
+  $('.close-overlay').on('click', () => {closeOverlay()});
 
-    $('.locked-present').on('click', () => {
-    	$('.locked-present').effect('shake', {times:2}, 500);
-    });
+  $('.footer').on('click', () => {
+    if (decoy) {
+      decoy = false;
+      fam = true;
+      $('.footer > h2').text('Merry Christmas 🎁')
+    } else if (!decoy && fam) {
+      fam = false;
+      $('.footer > h2').text('Merry Christmas 🎅')
+    } else {
+      decoy = true;
+      fam = true;
+      $('.footer > h2').text('Merry Christmas 🎄')
+    }
+  });
 
-    showPresent();
+  $('.closed-present').on('click', () => {
+  	if (! $('#present-box').hasClass('opened')){
+  		openPresent()
+  	}});
+
+  $('.locked-present').on('click', () => {
+  	$('.locked-present').effect('shake', {times:2}, 500);
+  });
+
+  showPresent();
 });
 
 function checkDate() {
