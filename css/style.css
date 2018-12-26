@@ -16,6 +16,15 @@
 	color: #636363;
 }
 
+.bg-4 {
+	background-color: #191919;
+	color: #fff;
+}
+
+.margin, body > .container, body > .container-fluid {
+	padding: 20px 50px;
+}
+
 .blur-me {
 	filter:blur(3px);
 	transition: .3s ease-in-out;
