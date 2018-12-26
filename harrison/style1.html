@@ -10,13 +10,116 @@
 <body class="wrapper">
 	<script src="/resources/navbar.js"></script>
 
-	<div class="container-fluid bg-3 text-center">
+	<!--Title Container-->
+	<div class="container-fluid bg-1 text-center">
 		<h3><b>Harrison Allen</b></h3>
 		<h3>The middle son</h3>
 		<img src="/img/profile_pictures/harrison.png" class="img-fluid rounded-circle" alt="harrison">
 	</div>
 
-    <script src="/resources/footer.js"></script>
+	<!--Video Embed-->
+	<div class="container-fluid text-center bg-3">
+		<div class="container">
+			<h3>Check out my cool video</h3>
+			<div class="embed-responsive embed-responsive-16by9">
+				<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/3V8mQKq8pa8" allow="autoplay;" allowfullscreen></iframe>
+			</div>
+		</div>
+	</div>
+
+	<!--Image Carousel-->
+	<div class="container text-center">
+		<h3>And this cool slideshow</h3>
+		<div id="picture_slide" class="carousel slide" data-ride="carousel">
+			<!--Indicators-->
+			<ul class="carousel-indicators">
+				<li data-target="#picture_slide" data-slide-to="0" class="active"></li>
+				<li data-target="#picture_slide" data-slide-to="1"></li>
+				<li data-target="#picture_slide" data-slide-to="2"></li>
+				<li data-target="#picture_slide" data-slide-to="3"></li>
+			</ul>
+
+			<!--Slideshow-->
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="/img/harrison/image_1.JPG" alt="WatchMe logo" class="img-fluid">
+					<div class="carousel-caption">
+						<h3>WatchMe Logo</h3>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img src="/img/harrison/image_2.JPG" alt="Mario Kart DDR" class="img-fluid">
+					<div class="carousel-caption">
+						<h3>Mario Kart DDR</h3>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img src="/img/harrison/image_3.JPG" alt="Mario Kart Controller" class="img-fluid">
+					<div class="carousel-caption">
+						<h3>Mario Kart Controller</h3>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img src="/img/harrison/image_4.JPG" alt="Touchpad" class="img-fluid">
+					<div class="carousel-caption">
+						<h3>Touchpad</h3>
+					</div>
+				</div>
+			</div>
+
+			<a class="carousel-control-prev" href="#picture_slide" data-slide="prev">
+				<span class="carousel-control-prev-icon"></span>
+			</a>
+			<a class="carousel-control-next" href="#picture_slide" data-slide="next">
+				<span class="carousel-control-next-icon"></span>
+			</a>
+		</div>
+	</div>
+
+	<!--Photo Album-->
+	<div class="container-fluid text-center bg-1">
+		<h3>Or in a photo album form</h3>
+		<div class="row">
+			<div class="col-sm-6 col-md-3">
+				<img src="/img/harrison/image_1.JPG" class="img-thumbnail img-fluid" alt="WatchMe logo">
+				<h4>WatchMe Logo</h4>
+			</div>
+			<div class="col-sm-6 col-md-3">
+				<img src="/img/harrison/image_2.JPG" class="img-thumbnail img-fluid" alt="Mario Kart DDR">
+				<h4>Mario Kart DDR</h4>
+			</div>
+			<div class="col-sm-6 col-md-3">
+				<img src="/img/harrison/image_3.JPG" class="img-thumbnail img-fluid" alt="Mario Kart Controller">
+				<h4>Mario Kart Controller</h4>
+			</div>
+			<div class="col-sm-6 col-md-3">
+				<img src="/img/harrison/image_4.JPG" class="img-thumbnail img-fluid" alt="Touchpad">
+				<h4>Touchpad</h4>
+			</div>
+		</div>
+	</div>
+
+	<!--Sound, e.g. soundcloud-->
+	<div class="container-fluid text-center bg-4">
+		<h3>Have you heard these sick beats?</h3>
+		<div class="embed-responsive embed-responsive-21by9">
+			<iframe src="https://open.spotify.com/embed/user/tsilentwarrior/playlist/1lyRrig0dmOHjFIjS9TEz2" class="embed-responsive-item" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+		</div>
+	</div>
+
+	<!--Text-->
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-3">
+				<h3>And, of course, you can write whatever you'd like!</h3>
+			</div>
+			<div class="col-sm-9">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut volutpat justo. Etiam ac risus congue, pharetra elit sed, vestibulum enim. Maecenas a nisi consectetur, commodo urna et, condimentum leo. Morbi nec suscipit augue. Nam nec bibendum odio, id rhoncus ex. Pellentesque bibendum massa ut ex tempus aliquet. Phasellus nec elit laoreet, mattis nunc quis, elementum mi. Vestibulum vel semper dui, sed lobortis quam. Aliquam ut dolor blandit, cursus lacus nec, dictum ante. Suspendisse sed est mauris. Duis vel mollis est, ac volutpat metus.</p>
+			</div>
+		</div>
+	</div>
+
+	<script src="/resources/footer.js"></script>
 </body>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
