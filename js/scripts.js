@@ -23,14 +23,14 @@ $(document).ready(() => {
     if (decoy) {
       decoy = false;
       fam = true;
-      $('.footer > h4').text('Merry Christmas 🎁')
+      $('.footer > h4').text('Merry Christmas! 🎁')
     } else if (!decoy && fam) {
       fam = false;
-      $('.footer > h4').text('Merry Christmas 🎅')
+      $('.footer > h4').text('Merry Christmas! 🎅')
     } else {
       decoy = true;
       fam = true;
-      $('.footer > h4').text('Merry Christmas 🎄')
+      $('.footer > h4').text('Merry Christmas! 🎄')
     }
   });
 
