@@ -63,6 +63,10 @@ function openPresent() {
 	});
 }
 
+function goBack() {
+  window.history.back();
+}
+
 //Confetti!
 function launchConfetti() {
   var multiplier = .125;

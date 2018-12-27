@@ -1,3 +1,6 @@
+/*darker bg #b0e8e8*/
+/*lighter bg #ccffff*/
+
 .bg-1 {
 	background-color: #ccffff; /*snow blue*/
 	color: #000;
@@ -66,6 +69,11 @@
 
 .footer {
 	padding: 10px;
+}
+
+.go-back {
+	background-color: #b0e8e8;
+	border-radius: 50%;
 }
 
 .fade-in {

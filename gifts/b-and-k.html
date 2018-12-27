@@ -3,27 +3,28 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>The 5 Allens</title>
+	<title>Brandon and Kelly's Gift</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/css/confetti.css">
 	<link rel="stylesheet" href="/css/style.css">
 </head>
-<body class="fade-in">
+<body class="wrapper">
 	<!--Navbar-->
 	<nav class="navbar navbar-expand-sm bg-1 navbar-light sticky-top">
 		<a class="navbar-brand" href="/index.html">
 			<img src="/img/banner.png" alt="family banner" height="30">
 		</a>
 
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+		<button id="is-mobile" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
 			<span class="navbar-toggler-icon"></span>
 		</button>
 
 		<div class="collapse navbar-collapse" id="collapsibleNavbar">
 			<ul class="navbar-nav">
-				<li class="nav-item active">
+				<li class="nav-item">
 					<a class="nav-link" href="/main_page.html">Home</a>
 				</li>
-				<li class="nav-item dropdown">
+				<li class="nav-item dropdown active">
 					<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
 						Gifts
 					</a>
@@ -31,7 +32,7 @@
 					<a class="dropdown-item" href="/gifts/">All Gifts</a>
 					<a class="dropdown-item" href="/gifts/phil.html">Phil</a>
 					<a class="dropdown-item" href="/gifts/jan.html">Jan</a>
-					<a class="dropdown-item" href="/gifts/b-and-k.html">Brandon & Kelly</a>
+					<a class="dropdown-item active" href="/gifts/b-and-k.html">Brandon & Kelly</a>
 					<a class="dropdown-item" href="/gifts/harrison.html">Harrison</a>
 					<a class="dropdown-item" href="/gifts/colton.html">Colton</a>
 					<a class="dropdown-item" href="/gifts/ohyoon.html">Ohyoon</a>
@@ -55,66 +56,26 @@
 		</div>
 	</nav>
 
-	<!--Family Photo-->
-	<div class="jumbotron jumbotron-fluid bg-1 text-center">
-		<div class="container">
-			<div class="container family-banner">
-				<img src="/img/banner.png" class="img-fluid">
-			</div>
-			<!-- <h1>The Allens</h1> -->
-			<div class="container family-photo">
-				<img src="/img/family.png" class="img-fluid">
-			</div>
-		</div>
-	</div>
+    <!--Present-->
+    <div class="present hide-on-start container-fluid text-center" id="present-box">
+    	<img src="/img/present_locked.png" alt="locked present" class="locked-present hide-on-start img-fluid">
+    	<img src="/img/present_closed.png" alt="closed present" class="closed-present hide-on-start img-fluid">
+    	<img src="/img/present_opened.png" alt="opened present" class="opened-present hide-on-start img-fluid">
+    </div>
 
-	<!--Family Links-->
-	<div class="container text-center">
-		<!--Parents-->
-		<div class="row">
-			<div class="col-3"></div>
-			<div class="col-6 col-md-2">
-				<a href="/phil/"><img src="/img/phil.png" class="rounded-circle img-fluid zoom-me"></a>
-				<h3>Phil</h3>
-			</div>
-			<div class="col-3 col-md-1"></div>
-			<div class="col-3 col-md-1"></div>
-			<div class="col-6 col-md-2">
-				<a href="/jan/"><img src="/img/jan.png" class="rounded-circle img-fluid zoom-me"></a>
-				<h3>Jan</h3>
-			</div>
-			<div class="col-3"></div>
-		</div>
-		<!--Children-->
-		<div class="row">
-			<div class="col-3 col-md-2"></div>
-			<div class="col-6 col-md-2">
-				<a href="/brandon/"><img src="/img/brandon.png" class="rounded-circle img-fluid zoom-me"></a>
-				<h3>Brandon</h3>
-			</div>
-			<div class="col-3 d-md-none"></div>
-			<div class="col-3 col-md-1"></div>
-			<div class="col-6 col-md-2">
-				<a href="/harrison/"><img src="/img/harrison.png" class="rounded-circle img-fluid zoom-me"></a>
-				<h3>Harrison</h3>
-			</div>
-			<div class="col-3 d-md-none"></div>
-			<div class="col-3 col-md-1"></div>
-			<div class="col-6 col-md-2">
-				<a href="/colton/"><img src="/img/colton.png" class="rounded-circle img-fluid zoom-me"></a>
-				<h3>Colton</h3>
-			</div>
-			<div class="col-3 col-md-2"></div>
-		</div>
-	</div>
+    <!--Gift-->
+    <div class="gift hide-on-start container-fluid text-center">
+    	<img src="/img/brandon_gift.png" alt="Brandon and Kelly's gift" class="img-fluid">
+    </div>
 
     <!--Footer-->
-    <div class="footer sticky-bottom bg-1 navbar-light text-center">
+    <div class="footer sticky-bottom bg-1 navbar-light text-center hide-on-start">
     	<h2>Merry Christmas! &#x1F384;</h2>
     </div>
 </body>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 <script src="/js/scripts.js"></script>
